@@ -9,7 +9,8 @@ body{
 .head{
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .top{
     list-style: none;
@@ -53,31 +54,27 @@ a:hover{
     color: firebrick;
     transform: scale(1.2);
 }
-.line{
-    border-left: 10px solid black;
-    height:200px;
-    margin-left: 670px;
-    margin-top: 50px;
-    transition: all 1sec;
-    transform: translateY(100px);
-}
 .arrow{
-     border-right: 10px solid; 
-    border-bottom: 10px solid;
-    height: 100px;
-    width: 100px;
-    transform: rotate(  45deg);
-    margin-left: 620px;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    transform: rotate(45deg);
+    margin-left: 500px;
+    transition: all 1s;
 }
-
+.arrow:hover{
+    transform: rotate(405deg);
+}
 .fa{
     padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none; 
-  margin: 200px 130px 0px 130px;
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
+    margin-left: 50px;
 /*    align-content: center;*/
     
 }
