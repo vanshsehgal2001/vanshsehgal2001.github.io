@@ -9,7 +9,7 @@ body{
 .head{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 .top{
@@ -54,27 +54,25 @@ a:hover{
     color: firebrick;
     transform: scale(1.2);
 }
+
 .arrow{
     display: flex;
     height: 400px;
     width: 400px;
-    transform: rotate(45deg);
-    margin-left: 500px;
-    transition: all 1s;
+    transform: rotate(  45deg);
+    margin-left: 620px;
 }
-.arrow:hover{
-    transform: rotate(405deg);
-}
+
 .fa{
-    padding: 20px;
+  padding: 20px;
   font-size: 30px;
   width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   text-decoration: none; 
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-left: 50px;
+  margin-bottom: 30px;
 /*    align-content: center;*/
     
 }
