@@ -1,0 +1,150 @@
+body{
+    background-image: url("picture.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+/*    background-size: cover;*/
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.top{
+    list-style: none;
+    margin: 0px 10px;
+    padding: 10px 100px 20px 20px;
+    align-items: center;
+    text-align: center;
+    transition: all 1s;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Sofia';
+    font-size: 40px;
+    font-weight: bolder;
+    border-bottom: 5px solid green;
+    transition: all 1s;
+    box-shadow: 4px 4px 4px green;
+}
+a:hover{
+    color: white;
+    border-bottom: 5px solid black;
+    box-shadow: 4px 4px 4px black;
+}
+.top:hover{
+    transform: scale(1.2);
+}
+
+.centre{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: "Pattaya";
+    transition: all 1s;
+}
+.centre:hover{
+/*    transform: scale(1.5);*/
+    color: firebrick;
+    transform: scale(1.2);
+}
+.line{
+    border-left: 10px solid black;
+    height:200px;
+    margin-left: 670px;
+    margin-top: 50px;
+    transition: all 1sec;
+    transform: translateY(100px);
+}
+.arrow{
+     border-right: 10px solid; 
+    border-bottom: 10px solid;
+    height: 100px;
+    width: 100px;
+    transform: rotate(  45deg);
+    margin-left: 620px;
+}
+
+.fa{
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none; 
+  margin: 200px 130px 0px 130px;
+    margin-bottom: 30px;
+/*    align-content: center;*/
+    
+}
+.fa:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.fa-instagram{
+    background-color:  #e4405f;
+    color: white;
+}
+
+.fa-whatsapp{
+    background-color: #4AC959;
+    color: white;
+}
+
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+
+.fa-twitter{
+    background-color: #55ACEE;
+}
+
+
+.foot{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    padding: 0;
+    margin-bottom: 5px;
+    font-family: "Annie Use Your Telescope";
+    font-weight: bolder;
+    transition: all 1s;
+}
+.foot:hover{
+    transform: skewX(5deg);
+    color: purple;
+    box-shadow: 4px 4px 4px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
