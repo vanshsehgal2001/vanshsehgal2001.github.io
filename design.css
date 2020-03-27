@@ -9,7 +9,7 @@ body{
 .head{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+/*     flex-wrap: wrap; */
     justify-content: center;
 }
 .top{
