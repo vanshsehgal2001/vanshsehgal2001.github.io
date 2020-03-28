@@ -68,6 +68,7 @@ a:hover{
     transform: skewX(5deg);
     color: purple;
     box-shadow: 4px 4px 4px black;
+    cursor: none;
 }
 
 
