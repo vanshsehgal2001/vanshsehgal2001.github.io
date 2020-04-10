@@ -4,12 +4,13 @@ using namespace std;
 
 int main(){
 	int value;
-	double yourmoney;
+	float yourmoney;
 	int n=0;
 	char ch='y';
 	double increase;
 	int maxamount=yourmoney;
 	int round=0;
+	int wins=0;
 	while(ch=='y'||ch=='Y'){
 		cout<<"************ GAME OF LUCK *************"<<endl;
 		cout<<endl;
@@ -26,28 +27,17 @@ int main(){
 			cout<<"Enter a valid value"<<endl;
 			break;
 		}
-		while(yourmoney>0){
+		while(yourmoney>1){
 			srand(time(NULL));
 			int dice1=rand()%6 +1;
 			int dice2=rand()%6 +1;
-			if(yourmoney>50){
-				srand(time(NULL));
-				increase=rand()%9 + 1;
-			}
-			else if(yourmoney<=50 && yourmoney>=30){
-				srand(time(NULL));
-				increase=rand()%6 +1;
-			}
-			else{
-				srand(time(NULL));
-				increase=rand()%3 +1;
-			}
 			if(dice1+dice2==value){
-				yourmoney+=increase;
+				yourmoney=yourmoney*2;
 				n++;
+				wins++;
 			}
 			else{
-				yourmoney-=increase;
+				yourmoney=yourmoney-(0.2*yourmoney);
 				n++;
 			}
 			if(yourmoney>maxamount){
@@ -55,8 +45,14 @@ int main(){
 				round=n;
 			}
 			cin.ignore();
-		cout<<"At the end of Round "<<n<<" U Have Rupees = "<<yourmoney<<endl;
-		cout<<endl;
+			cout<<"Dice-1: "<<dice1<<endl;
+			cout<<"Dice-2: "<<dice2<<endl;
+		
+			cout<<"At the end of Round "<<n<<" U Have Rupees = "<<yourmoney<<endl;
+			cout<<endl;
+			if(wins>=3){
+				wins=0;			
+			}
 		}
 		cout<<"So you lost all of your money in "<<n<<" Rounds and Now you are in debt of Rupees = "<<abs(yourmoney)<<endl;
 		cout<<endl;
@@ -70,7 +66,6 @@ int main(){
 		cout<<endl;
 	}
 }
-
 
 
 
