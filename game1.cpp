@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stdlib>
 using namespace std;
 
 int main(){
@@ -35,6 +36,7 @@ int main(){
 		if(choice==3){
 			cout<<choice<<" "<<"SCISSORS"<<endl;
 		}
+		srand(time(NULL));
 		int computer_choice=rand()%3 +1;
 		cout<<"COMPUTER CHOSE---->>>>>>";
 		if(computer_choice==1){
