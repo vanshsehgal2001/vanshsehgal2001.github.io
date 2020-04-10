@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	int value;
-	float yourmoney;
+	int yourmoney=0;
 	int n=0;
 	char ch='y';
 	double increase;
@@ -63,6 +63,11 @@ int main(){
 		cout<<"If Yes-->> tap Y or y"<<endl<<endl;
 		cout<<"If Not-->> tap any button on keyboard"<<endl;
 		cin>>ch;
+		if(ch=='y'||ch=='Y'){
+			yourmoney=0;
+			maxamount=0;
+			n=0;
+		}
 		cout<<endl;
 	}
 }
